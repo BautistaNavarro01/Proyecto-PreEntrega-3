@@ -1,0 +1,24 @@
+$color-principal: black;
+$color-secundario: #8B48BF;
+$color-terciario: white;
+
+//listas
+
+$colores:white, #8B48BF, black;
+
+// mapas
+//map-get($padding, pad)
+
+$padding:(
+    pad: 10px,
+    pad1: 20px
+);
+
+//extends
+// @extend %flex-center;
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
