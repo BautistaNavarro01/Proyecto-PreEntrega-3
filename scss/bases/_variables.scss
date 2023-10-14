@@ -22,3 +22,12 @@ $padding:(
     justify-content: center;
     align-items: center;
 }
+
+// @extend %Super-Flex-Center;
+
+%Super-Flex-Center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

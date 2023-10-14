@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center; }
 
+.hero, section .sesion, section .catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /*Reglas generales*/
 * {
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -53,11 +59,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-attachment: fixed; }
   .hero h2 {
     display: flex;
     justify-content: center;
@@ -244,7 +246,11 @@ header {
     padding-bottom: 100px;
     padding-top: 50px; }
     .productos .productos-contenedor .visto-01 {
-      padding: 20px; }
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
       .productos .productos-contenedor .visto-01 img {
         width: 300px;
         height: 300px; }
@@ -271,20 +277,12 @@ section .fondo-nike a img {
   width: 100%; }
 
 section .sesion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   padding-bottom: 50px; }
   section .sesion p {
     padding-bottom: 25px; }
 
 section .catalogo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 5px;
   padding-top: 25px;
   padding-bottom: 25px; }
@@ -294,6 +292,8 @@ section .catalogo {
     align-items: center;
     padding-bottom: 50px; }
     section .catalogo .imagenes-catalogo a img {
+      width: 600px;
+      height: 600px;
       padding: 5px; }
 
 section .catalogo .imagenes-catalogo-01 {
@@ -302,19 +302,18 @@ section .catalogo .imagenes-catalogo-01 {
   align-items: center;
   padding-bottom: 50px; }
   section .catalogo .imagenes-catalogo-01 a img {
-    width: 375px;
-    height: 375px;
+    width: 300px;
+    height: 300px;
     padding: 5px; }
+
+section .classic a img {
+  width: 100%; }
 
 section .catalogo-01 .mercurio {
   display: flex;
   justify-content: center; }
 
 section .sesion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   padding-bottom: 50px; }
 

@@ -8,10 +8,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %Super-Flex-Center;
 
     h2 {
         display: flex;
@@ -296,6 +293,10 @@
 
         .visto-01 {
             padding: map-get($padding, pad1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             img {
                 width: 300px;
@@ -339,10 +340,7 @@ section{
         }
     }
     .sesion{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %Super-Flex-Center;
         padding: map-get($padding, pad1);
         padding-bottom: 50px;
 
@@ -356,10 +354,7 @@ section{
 
 section{
     .catalogo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %Super-Flex-Center;
    
         padding: 5px;
         padding-top: 25px;
@@ -372,6 +367,9 @@ section{
             padding-bottom: 50px;
             a{
                 img{
+                    width: 600px;
+                    height: 600px;
+
                     padding: 5px;
                 }
             }
@@ -388,11 +386,21 @@ section{
             padding-bottom: 50px;
             a{
                 img{
-                    width: 375px;
-                    height: 375px;
+                    width: 300px;
+                    height: 300px;
                
                     padding: 5px;
                 }
+            }
+        }
+    }
+}
+
+section{
+    .classic{
+        a{
+            img{
+                width: 100%;
             }
         }
     }
@@ -406,10 +414,7 @@ section{
         }
     }
     .sesion{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %Super-Flex-Center;
         padding: map-get($padding, pad1);
         padding-bottom: 50px;
     }
